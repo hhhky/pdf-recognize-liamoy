@@ -12,6 +12,11 @@ import os, sys, re, argparse, subprocess, shutil
 from pathlib import Path
 from typing import Optional, List, Tuple
 
+# Windows: 强制 UTF-8 输出，避免 GBK 编码错误
+if sys.platform == "win32":
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    sys.stderr.reconfigure(encoding="utf-8", errors="replace")
+
 VERSION = "1.0.0"
 TUXIANGSHIBIE_OCR = Path("C:/Users/14168/Desktop/task1/ocr.py")
 

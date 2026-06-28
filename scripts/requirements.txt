@@ -1,0 +1,13 @@
+# pdf-recognize-liamoy 依赖
+# ===========================
+# 核心依赖（必须）
+pdfplumber>=0.11.0
+pypdf>=3.0.0
+
+# MinerU 引擎（推荐安装以获得最佳质量）
+# pip install mineru[full]
+# 注意: mineru 需要 Python 3.10+ 和约 4GB 磁盘空间（用于模型文件）
+
+# tuxiangshibie OCR（降级方案，已安装则跳过）
+# 位于 C:\Users\14168\Desktop\task1\ocr.py
+# 依赖: easyocr, paddlepaddle, paddleocr

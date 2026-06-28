@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.liamoy_temp_*/
+*.egg-info/
+dist/
+.venv/
+venv/
